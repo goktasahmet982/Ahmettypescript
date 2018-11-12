@@ -6,11 +6,11 @@ dayname: string;
 dayNo: number;
 
 }
-var dayname: string = 'SATURDAY',
+var dayname: string = 'SAT',
 dayNo: number = 7,
 Aname: string = 'Gym Day';
 
-var dayname: string = 'SUNDAY',
+var dayname: string = 'SUN',
 dayNo: number = 8,
 Aname: string = 'Fun Day';
 
@@ -23,7 +23,7 @@ class PickaDay {
 function  Day(weekend: any) {
     return weekend.dayname + "for" + weekend.dayNo + "Day" + weekend.Aname + ".";
    }
-   let perf = new PickaDay("Sunday", 8, "Fun Day");
+   let perf = new PickaDay("SUN", 8, "Fun Day");
     
    document.body.innerHTML = Day(0);
 

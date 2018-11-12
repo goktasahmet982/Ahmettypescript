@@ -8,8 +8,8 @@ var Daysoftheweek;
     Daysoftheweek[Daysoftheweek["FRI"] = 5] = "FRI";
     Daysoftheweek[Daysoftheweek["SAT"] = 6] = "SAT";
 })(Daysoftheweek || (Daysoftheweek = {}));
-var dayname = 'SATURDAY', dayNo = 7, Aname = 'Gym Day';
-var dayname = 'SUNDAY', dayNo = 8, Aname = 'Fun Day';
+var dayname = 'SAT', dayNo = 7, Aname = 'Gym Day';
+var dayname = 'SUN', dayNo = 8, Aname = 'Fun Day';
 var PickaDay = /** @class */ (function () {
     function PickaDay(dayname, dayNo, Aname) {
         this.dayname = dayname;
@@ -22,5 +22,5 @@ var PickaDay = /** @class */ (function () {
 function Day(weekend) {
     return weekend.dayname + "for" + weekend.dayNo + "Day" + weekend.Aname + ".";
 }
-var perf = new PickaDay("Sunday", 8, "Fun Day");
+var perf = new PickaDay("SUN", 8, "Fun Day");
 document.body.innerHTML = Day(0);
